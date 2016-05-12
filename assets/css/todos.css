@@ -1,16 +1,13 @@
-#container {
-	/* shadow effect to border */
-	box-shadow: 0 0 3px rgba(0,0,0, 0.2); 
-	margin: 100px auto;
-	width: 360px;
-	background: #f7f7f7;
-	
+body {
+	font-family: Roboto;
+
+	background: #3D7EAA; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #3D7EAA , #FFE47A); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #3D7EAA , #FFE47A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	        
+        
 }
 
-.done {
-	text-decoration: line-through;
-	color: red;
-}
 
 h1{
 	background: #2980b9;
@@ -22,9 +19,6 @@ h1{
 	font-weight: normal;
 }
 
-.fa-plus{
-	float: right;
-}
 
 ul {
 	/* Remove bullet point */
@@ -34,15 +28,7 @@ ul {
 
 }
 
-body {
-	font-family: Roboto;
 
-	background: #3D7EAA; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #3D7EAA , #FFE47A); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #3D7EAA , #FFE47A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	        
-        
-}
 
 li {
 	background: #fff;
@@ -63,6 +49,19 @@ n can be a number, a keyword, or a formula */
 	background: #f7f7f7;
 }
 
+
+span {
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
 input {
 	color: #2980b9;
 	font-size: 18px;
@@ -80,14 +79,30 @@ input:focus { /* Select and style an input field when it gets focus */
 	outline: none;
 }
 
-span {
-	background: #e74c3c;
-	height: 40px;
-	margin-right: 20px;
-	text-align: center;
-	color: white;
-	width: 0;
-	display: inline-block;
-	transition: 0.2s linear;
-	opacity: 0;
+
+
+
+#container {
+	/* shadow effect to border */
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2); 
+	margin: 100px auto;
+	width: 360px;
+	background: #f7f7f7;
+	
 }
+
+.done {
+	text-decoration: line-through;
+	color: red;
+}
+
+
+
+.fa-plus{
+	float: right;
+}
+
+
+
+
+
