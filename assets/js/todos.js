@@ -39,12 +39,18 @@ $("ul").on("click","span", function(){
 
 
 
-$("input[type='text']").keypress(function(event){
+$("input[type='text'").keypress(function(event){
 
 	if(event.which===13){//check enter key
 		var todoText = $(this).val();
-		$(this).val("");//reset input field 
-		$("ul").append("<li><span>x</span> " + todoText + "</li>");
+		if(todoText){
+			$(this).val("");//reset input field 
+			$("ul").append("<li><span><i class='fa fa-trash'></i></span> " + todoText + "</li>");
+		} 
 	}
 
 });
+
+$(".fa-plus").click(function(){
+	$("input[type='text").fadeToggle();
+})
